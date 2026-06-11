@@ -53,10 +53,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const slideImg = document.getElementById("slide");
   if (slideImg) {
     const slides = [
-      "/assets/image1.jpg",
-      "/assets/image2.webp",
-      "/assets/image3.jpg",
-      "/assets/image4.webp",
+      "./assets/image1.jpg",
+      "./assets/image2.webp",
+      "./assets/image3.jpg",
+      "./assets/image4.webp",
     ];
     let num = 0;
     window.changeSlide = function (sens) {
