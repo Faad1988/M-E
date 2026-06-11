@@ -1,4 +1,23 @@
 /* Responsive pour toutes les pages */
+
+@media (max-width: 435px) {
+
+    .logo img{
+        width: 100px;
+        padding: 3px;
+    }
+
+
+    .hamburger span{
+       width: 100%;
+    }
+
+}
+
+
+
+
+
 @media (max-width: 768px) {
     body {
         overflow-x: hidden;
@@ -8,9 +27,10 @@
     font-size: 0;         
   }
 
-  #connexion::before {
-    content: "8";          
+  #connexion::after {
+    content: "👤";         
     display: inline-block;
+    font-size: 1.5rem;
     line-height: 1;
   }
 
