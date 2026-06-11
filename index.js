@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", () => {
         slideImg.style.opacity = "1";
       }, 300);
     };
-    setInterval(() => changeSlide(1), 4000);
+   // setInterval(() => changeSlide(1), 4000);
   }
 
   // Déconnexion sur la page membre
