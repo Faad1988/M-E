@@ -8,7 +8,16 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-#dalil {
+#dalil, #basma {
+    margin-top: 1rem;
+    font-size: 1.9rem;
+    font-weight: 900;
+}
+#accueil-photo {
+    height: 60vh;
+    width: 100%;
+    object-fit: cover;
+} {
     margin-top: 1rem;
     font-size: 1.5rem;
     font-weight: 900;
