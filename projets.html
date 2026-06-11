@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Découvrez nos projets en cours et à venir – Mirontsi Espoir.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mirontsi Espoir – Projets</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/CSS/common.css">
+    <link rel="stylesheet" href="/CSS/projets.css">
+    <link rel="stylesheet" href="/CSS/responsive.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><img src="/assets/IMG-20260428-WA0000.jpg" alt="Logo Mirontsi Espoir" loading="eager"></div>
+            <div class="hamburger" role="button" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></div>
+            <div class="nav-list">
+                <ul>
+                    <li><a href="./index.html">Accueil</a></li>
+                    <li><a href="./actuPage.html">Actualité</a></li>
+                    <li><a href="./presentation.html">Qui sommes-nous</a></li>
+                    <li><a href="./projets.html">Projets</a></li>
+                </ul>
+            </div>
+            <div class="log"><button id="connexion">Espace membre</button></div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Popup connexion -->
+        <section class="form">
+            <div class="btn-close"><span class="close">X</span></div>
+            <div class="connexion"><h2>Connexion</h2></div>
+            <form id="formConnexion">
+                <label for="name">Nom</label><br>
+                <input type="text" placeholder="Nom d'utilisateur" id="name"><br>
+                <label for="password">Mot de passe</label><br>
+                <input type="password" placeholder="Mot de passe" id="password">
+                <input type="checkbox" id="rappel"><br>
+                <label for="rappel">Se souvenir de moi</label><br>
+                <button type="submit">Se connecter</button>
+            </form>
+            <div class="error-message"></div>
+        </section>
+
+        <h1>Nos projets</h1>
+        <div class="projets-container">
+            <div class="cours-ete">
+                <h2>Cours d'été</h2>
+                <p>Organisation de cours de soutien et d'activités éducatives pour les enfants du village pendant les vacances.</p>
+            </div>
+            <div class="recup-matos">
+                <h2>Récupération de matériel</h2>
+                <p>Collecte de matériel informatique, scolaire et médical en France pour l'envoyer à Mirontsi Itsandra.</p>
+            </div>
+            <div class="projet-bus">
+                <h2>Achat d'un bus</h2>
+                <p>Collecte de fonds pour l'acquisition d'un bus destiné au transport scolaire et sanitaire.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-div">
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="./index.html">Accueil</a></li>
+                <li><a href="./actuPage.html">Actualité</a></li>
+                <li><a href="./presentation.html">Qui sommes-nous</a></li>
+                <li><a href="./projets.html">Projets</a></li>
+            </ul>
+        </div>
+        <div class="footer-div">
+            <h2>Réseaux sociaux</h2>
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Telegram</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">TikTok</a></li>
+            </ul>
+        </div>
+        <div class="footer-div">
+            <h2>Liens</h2>
+            <ul>
+                <li><a href="./index.html">Accueil</a></li>
+                <li><a href="./actuPage.html">Actualité</a></li>
+                <li><a href="./presentation.html">Qui sommes-nous</a></li>
+                <li><a href="./projets.html">Projets</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="./index.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+body {
+    text-align: center;
+    padding: 2rem;
+}
+
+.compte-rendu{
+    display: none;
+}
+
+.compte-rendu.active{
+    display: block;
+}
+
+.red-agr{
+    border-radius: 5px;
+    padding: 2px 1px;
+    background-color:green;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.red-agr:hover{
+    background-color: #7ca52b;
+    color: white;
+    border-radius: 5px;
+    padding: 2px 1px;
+    cursor: pointer;
+}

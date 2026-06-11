@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Toutes les actualités de Mirontsi Espoir : événements, projets, appels aux dons.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mirontsi Espoir – Actualités</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/CSS/common.css">
+    <link rel="stylesheet" href="/CSS/actu.css">
+    <link rel="stylesheet" href="/CSS/responsive.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><img src="/assets/IMG-20260428-WA0000.jpg" alt="Logo Mirontsi Espoir"></div>
+            <div class="hamburger" role="button" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></div>
+            <div class="nav-list">
+                <ul>
+                    <li><a href="./index.html">Accueil</a></li>
+                    <li><a href="./actuPage.html">Actualité</a></li>
+                    <li><a href="./presentation.html">Qui sommes-nous</a></li>
+                    <li><a href="./projets.html">Projets</a></li>
+                </ul>
+            </div>
+            <div class="log"><button id="connexion">Espace membre</button></div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Popup connexion -->
+        <section class="form">
+            <div class="btn-close"><span class="close">X</span></div>
+            <div class="connexion"><h2>Connexion</h2></div>
+            <form id="formConnexion">
+                <label for="name">Nom</label><br>
+                <input type="text" placeholder="Nom d'utilisateur" id="name"><br>
+                <label for="password">Mot de passe</label><br>
+                <input type="password" placeholder="Mot de passe" id="password">
+                <input type="checkbox" id="rappel"><br>
+                <label for="rappel">Se souvenir de moi</label><br>
+                <button type="submit">Se connecter</button>
+            </form>
+            <div class="error-message"></div>
+        </section>
+
+        <section class="articles">
+            <h1>ACTUALITÉS</h1>
+            <div class="article">
+                <div class="poster">
+                    <img src="./assets/IMG-20260423-WA0002.jpg" alt="Journée multisport" loading="eager">
+                    <h2>Journée multisport</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci impedit perspiciatis optio...</p>
+                </div>
+                <div class="poster">
+                    <img src="./assets/IMG-20260423-WA0002.jpg" alt="Collecte de fonds" loading="eager">
+                    <h2>Collecte de fonds</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci impedit perspiciatis optio...</p>
+                </div>
+                <div class="poster">
+                    <img src="./assets/IMG-20260423-WA0002.jpg" alt="Ramadan solidaire" loading="eager">
+                    <h2>Ramadan solidaire</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci impedit perspiciatis optio...</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-div">
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="./index.html">Accueil</a></li>
+                <li><a href="./actuPage.html">Actualité</a></li>
+                <li><a href="./presentation.html">Qui sommes-nous</a></li>
+                <li><a href="./projets.html">Projets</a></li>
+            </ul>
+        </div>
+        <div class="footer-div">
+            <h2>Réseaux sociaux</h2>
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Telegram</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">TikTok</a></li>
+            </ul>
+        </div>
+        <div class="footer-div">
+            <h2>Liens</h2>
+            <ul>
+                <li><a href="./index.html">Accueil</a></li>
+                <li><a href="./actuPage.html">Actualité</a></li>
+                <li><a href="./presentation.html">Qui sommes-nous</a></li>
+                <li><a href="./projets.html">Projets</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="./index.js"></script>
+</body>
+</html>

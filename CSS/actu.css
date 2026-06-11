@@ -1,0 +1,29 @@
+/* Styles spécifiques à la page actualités */
+.article img {
+    width: 200px;
+}
+.article {
+    background-image: url(./assets/Logo.png);
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.article > div {
+    flex: 1 1 200px;
+}
+.poster {
+    border: 3px solid transparent;
+    border-radius: 20px;
+    padding: 7px;
+    text-align: center;
+    background-color: rgba(250,235,215,0.452);
+    margin: 2rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.poster:hover {
+    transform: scale(1.1);
+    border: 3px solid #5e390a;
+}
