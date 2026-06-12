@@ -11,6 +11,30 @@ document.addEventListener("DOMContentLoaded", () => {
     );
   }
 
+  // compte rendu
+
+  const toggles = document.querySelectorAll(".red-agr");
+  toggles.forEach((toggle) => {
+    toggle.addEventListener("click", (e) => {
+      const embed = toggle.parentElement.nextElementSibling; // l'embed juste après le h2
+      if (embed && embed.tagName === "EMBED") {
+        if (embed.style.display === "none" || !embed.style.display) {
+          embed.style.display = "block";
+          toggle.textContent = "−";
+        } else {
+          embed.style.display = "none";
+          toggle.textContent = "+";
+        }
+      }
+    });
+    // Initialisation : masquer les PDF sauf si tu veux les laisser visibles
+    const embed = toggle.parentElement.nextElementSibling;
+    if (embed && embed.tagName === "EMBED") {
+      embed.style.display = "none";
+      toggle.textContent = "+";
+    }
+  });
+
   // Formulaire de connexion
   const connexionBtn = document.getElementById("connexion");
   const closeBtn = document.querySelector(".close");
@@ -67,7 +91,7 @@ document.addEventListener("DOMContentLoaded", () => {
         slideImg.style.opacity = "1";
       }, 300);
     };
-   // setInterval(() => changeSlide(1), 4000);
+    //setInterval(() => changeSlide(1), 4000);
   }
 
   // Déconnexion sur la page membre
