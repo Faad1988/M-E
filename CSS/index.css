@@ -17,16 +17,8 @@
     height: 60vh;
     width: 100%;
     object-fit: cover;
-} {
-    margin-top: 1rem;
-    font-size: 1.5rem;
-    font-weight: 900;
-}
-#accueil-photo {
-    height: 60vh;
-    width: 100%;
-    object-fit: cover;
-}
+} 
+
 .hero-contain {
     display: flex;
 }

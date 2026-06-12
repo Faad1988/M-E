@@ -14,13 +14,87 @@
 
     #dalil, #basma {
     margin-top: 1rem;
-    font-size: 1rem;
+    font-size: 16px;
     font-weight: 900;
 }
 #accueil-photo {
     height: 40vh;
     width: 100%;
     object-fit: cover;
+}
+
+.form {
+    border-radius: 25px;
+    gap: 0.5rem;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 0;
+    left: 30%;
+    background: green;
+    position: absolute;
+    width: 60%;
+    height: 70vh;
+    box-shadow: 0px 0px 10px 8px white;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+}
+.form.active {
+    z-index: 9999;
+    text-align: center;
+    display: flex;
+    opacity: 1;
+    visibility: visible;
+}
+.btn-close {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+.btn-close span {
+    padding: 0.3rem;
+    background-color: orange;
+    border: 3px solid transparent;
+    font-weight: bold;
+    font-size: 25px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.btn-close span:hover {
+    transform: scale(1.1);
+    background-color: rgb(185, 123, 6);
+    border: 3px solid orange;
+}
+.form h1, .form h2 {
+    width: 100%;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    padding: 0.5rem;
+}
+.form button, .form input {
+    text-align: center;
+    margin-bottom: 3px;
+    border: none;
+    border-radius: 15px;
+    width: 70%;
+    padding: 0.6rem;
+    background: rgba(255, 255, 255, 0.493);
+    color: black;
+    font-weight: 300;
+}
+.form input::placeholder {
+    color: black;
+}
+.form label {
+    color: black;
+}
+.error-message {
+    color: red;
+    margin-top: 10px;
+    text-align: center;
 }
 
 }
@@ -44,6 +118,26 @@
     font-size: 1.5rem;
     line-height: 1;
   }
+  .btn-close span {
+    padding: 0.3rem;
+    background-color: orange;
+    border: 3px solid transparent;
+    font-weight: bold;
+    font-size: 25px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.btn-close span:hover {
+    transform: scale(1.1);
+    background-color: rgb(185, 123, 6);
+    border: 3px solid orange;
+}
+.form h1, .form h2 {
+    width: 100%;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    padding: 0.5rem;}
 
     .hamburger {
         display: flex !important;
@@ -135,5 +229,6 @@
         pointer-events: none;
     }
 }
+
 
     
