@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
       }
       errorDiv.textContent = "";
-      window.location.href = "/membre.html";
+      window.location.href = "./membre.html";
     });
   }
 
